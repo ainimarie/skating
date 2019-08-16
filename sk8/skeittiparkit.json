@@ -1,0 +1,11 @@
+{
+    "parkit": [
+        {
+            "nimi":"Mannila",
+            "lat": "62.272308",
+            "long": "25.713402",
+            "kuva":"img/mannila.jpg",
+            "kuvaus":"jotain"
+        }
+    ]
+}
