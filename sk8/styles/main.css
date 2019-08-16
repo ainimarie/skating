@@ -2,7 +2,19 @@
     margin: 0;
 }
 #map {
-    margin: 5vh 5vw;
-    width: 60vw;
-    height: 80vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
+
+.box__info {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:40vw;
+    height:90vh;
+    background-color: rgba(255, 255, 240, 0.6);
 }

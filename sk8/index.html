@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jyväskylän skeittiparkit</title>
+    
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -11,25 +12,42 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+   <script src="scripts/script.js"></script>
     </head>
-    <body>
+    <body onload="loadParks()">
 <header>
     <h1>skeittiparkit jyväskylässä</h1>
 </header>
 <div id="map"></div>
 <script>
 
-var mymap = L.map('map').setView([62.232328, 25.718094], 13);
+var mymap = L.map('map', {
+    center: [62.2438095,25.7365319],
+    zoom: 13,
+    zoomControl: false
+});
 
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieXVyaWFoYW5pIiwiYSI6ImNqanljZTFrMTBjMGEza25kMjBlZGZkdXYifQ.gxDr4e24ngDBS2ZmLueSuw', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+    maxZoom: 16,
     id: 'mapbox.streets'
 }).addTo(mymap);
 
-var marker = L.marker([62.272308, 25.713402]).addTo(mymap);
-marker.bindPopup('Mannila');
+var pin = L.icon({
+    iconUrl: 'img/marker.png',
+    iconSize: [45, 45],
+    iconAnchor: [16, 32],
+    popupAnchor: [-32, -32]
+});
+
+var info = L.control({
+    position: 'topleft'
+});
+
+
+
+
 
 </script>
     </body>

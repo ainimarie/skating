@@ -6,6 +6,13 @@
             "long": "25.713402",
             "kuva":"img/mannila.jpg",
             "kuvaus":"jotain"
+        },
+        {
+            "nimi":"Lohikoski",
+            "lat": "62.265087",
+            "long": "25.758051",
+            "kuva":" ",
+            "kuvaus":"jotain"
         }
     ]
 }
