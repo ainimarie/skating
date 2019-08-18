@@ -1,5 +1,6 @@
 :root {
     --main-font-color: #333;
+    --secondary-font-color: #666;
     --main-bg-color: #f8f8f8;
     --secondary-bg-color: #e0e3ee;
 }
@@ -24,9 +25,10 @@ html {
 }
 
 .container {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0;
 }
 
@@ -48,7 +50,7 @@ padding:20px;
     text-align: center;
 }
 
-.header__title:before {
+.header__title:after {
     display: inline-block;
     background: url('../img/skate.png') no-repeat;
     content: '';
@@ -61,14 +63,14 @@ padding:20px;
 #map {
     width: 55vw;
     height: 75vh;
-    border-radius: 2%;
+    border-radius: 1%;
     box-shadow: 2px 2px 1px rgba(68, 68, 68, 0.2);
     -moz-box-shadow: 2px 2px 1px rgba(68, 68, 68, 0.2);
     -webkit-box-shadow: 2px 2px 1px rgba(68, 68, 68, 0.2);
 }
 
 .sidebar {
-    width: 40vw;
+    width: 25vw;
     height: 100vh;
     padding: 30px;
     background-color: var(--secondary-bg-color);
