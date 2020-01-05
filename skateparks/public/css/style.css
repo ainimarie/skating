@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  color: var(--main-font-color);
+  line-height: 1.5;
+  background-color: var(--main-bg-color);
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+
+.header {
+  padding: 10px;
+font-family: 'Lexend Mega', sans-serif;
+}
+
+.header__title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.header__title:after {
+  display: inline-block;
+  background: url('../img/skate.png') no-repeat;
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin: 0 10px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+
+#map {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+}
+
+#parkbox {
+  display: none;
+  margin: 30px auto;
+}
+
+
+.sidebar {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  width: 40vw;
+  height: 100vh;
+  padding: 20px 0;
+  background-color: var(--secondary-bg-color);
+}
+
+#weatherbox {
+  padding: 10px 30px;
+  background-color: var(--main-bg-color);
+width:100%;
+}
+
+
+.box__info {
+  background-color: var(--main-bg-color);
+}

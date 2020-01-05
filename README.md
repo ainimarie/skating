@@ -1,2 +1,6 @@
-# sk8
-skatepark locations 🗺️
+# skatemap
+
+can I skate today?!
+skatepark locations and weatherreport
+
+a simple CRUD app
