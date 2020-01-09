@@ -2,6 +2,7 @@
 
 can I skate today?!
 skatepark locations and weatherreport, weather from [dark sky api](https://darksky.net/dev)
+project for a schoolcourse.
 
 - a simple CRUD app
 - features also adding to favourites (on local storage)
